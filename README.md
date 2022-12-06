@@ -1,6 +1,4 @@
-# cmput-191-assignment-3
-
-## Analysis of the cost of 1kg of White Rice
+## White Rice Index
 
 ### Source Data
 
@@ -70,9 +68,9 @@ As you can see, most countries have cheaper white rice than Canada, but some are
 
 The external factor I chose was domestic rice production (rice in general, not white rice). I figured that if a country grew more rice locally, it would be cheaper to buy in that country.
 
-I scraped data from (Atlas Big)[https://www.atlasbig.com/en-ca/countries-by-rice-production]. The resulting table is clened by formatting the numbers and converting from `Tons` to `Million Kg`. Then, the tables are joined. There are only 10 countries in common between the tables.
+I scraped data from [Atlas Big](https://www.atlasbig.com/en-ca/countries-by-rice-production). The resulting table is clened by formatting the numbers and converting from `Tons` to `Million Kg`. Then, the tables are joined. There are only 10 countries in common between the tables.
 
-I plot a scatter plot of `Produciton` vs `Price Difference`:
+I plot a scatter plot of `Production` vs `Price Difference`:
 
 ![](final_scatterplot.png)
 
