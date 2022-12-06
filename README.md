@@ -1,4 +1,9 @@
 ## White Rice Index
+## Why
+
+- Staple grain
+- Better than brown rice
+- Data likely available and extensive
 
 ### Source Data
 
@@ -90,7 +95,8 @@ We learned a few things here:
 - If you really really like buying rice for cheap, move to Portugal.
 - If you really like buying expensive rice, move to the United States
 - If a country produces lots of rice, it probably has expensive local prices.
-- Most countries produce little or no rice and have cheaper rice than in Canada
+- Most countries produce little or no rice 
+- Most countries have cheaper rice than in Canada
 
 
 
