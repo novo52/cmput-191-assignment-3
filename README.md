@@ -57,3 +57,42 @@ exchange_rate_data = Table().with_columns("AlphabeticCode",
 
 Now that I have this data, I join the exchange rate table into the table we have created so far. The new table has price in CAD, exchange rate, local currency. Then, I calculate the price in local currency and add that as a new column. The new table with only the useful columns selected:
 ![](useful_table.png)
+
+### Plotting a bar graph
+
+First, I add a new column to the table from `Total Price/kg (CAD)	- canada_price` where `canada_price` is the price of 1kg of rice in Canada. So the column records the difference between the local price and the Canadian price for each country.
+
+![](bar_graph.png)
+
+As you can see, most countries have cheaper white rice than Canada, but some are more expensive.
+
+### External factor
+
+The external factor I chose was domestic rice production (rice in general, not white rice). I figured that if a country grew more rice locally, it would be cheaper to buy in that country.
+
+I scraped data from (Atlas Big)[https://www.atlasbig.com/en-ca/countries-by-rice-production]. The resulting table is clened by formatting the numbers and converting from `Tons` to `Million Kg`. Then, the tables are joined. There are only 10 countries in common between the tables.
+
+I plot a scatter plot of `Produciton` vs `Price Difference`:
+
+![](final_scatterplot.png)
+
+And here with the countries labeled:
+
+![](final_scatterplot_labeled.png)
+
+From the scatterplot, we can see that high producing countries tend to have high prices. However, the reason that there are only 10 countries in the data is because the rest produe approximately zero rice. From Atlas Big:
+```
+Canada does not produce rice.
+```
+So, filling in the zero values we see that although it is true that high producing countries tend to have high prices, It is not true that low producing ocuntries have low prices. Canada for example, has expensive rice and no production. Overall, the correlation is not very strong, particularily taking into account the zero values which make up the majority of the data. (~20-30)
+
+## Conclusion
+
+We learned a few things here:
+- If you really really like buying rice for cheap, move to Portugal.
+- If you really like buying expensive rice, move to the United States
+- If a country produces lots of rice, it probably has expensive local prices.
+- Most countries produce little or no rice and have cheaper rice than in Canada
+
+
+
